@@ -1,0 +1,240 @@
+ 
+ /* Fonte utilizada por Google */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ *{margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    
+ }
+
+ body {
+    background-color: black;
+ }
+
+    /* imagen de fundo del Header */
+header {
+        background-image: url('img.grupo11/ab.jpg');
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem dentro do elemento */
+        background-attachment: fixed;
+        filter: brightness(130%);
+        height: 700px;
+ }
+
+/* DIV que encorpora NAV */
+ .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+ }
+
+/* config. LOGO */
+ .logo11 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /*margin: auto;*/
+    width: 70px;
+    height: auto;
+    border-radius: 50px;
+  }
+/* Config. del NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0px;
+    }
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    }
+
+nav ul a {
+    color: white;
+    margin: 10px 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    
+}  
+ /*Animacion  NAV*/
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: aliceblue;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+    }
+
+nav ul a:hover::after{
+        width: 100%;
+    }
+    .btn.animate-btn{
+        animation:animate-outline 1s ease-out infinite
+    }
+    .btn:hover{
+        background-color: #0c5ba6;
+    }
+    @keyframes animate-outline{
+        from{
+            outline: 0px solid #226cb2;
+        }
+        to{
+            outline: 10px solid #186ebf;
+        }
+    }
+
+ section {
+    padding: 54px 0;
+ }
+ 
+ h3 {
+    font-size: 30px;
+ }
+
+ p {
+    color: white;
+ }
+
+/*Config. BOTON*/
+ .btn {
+    background-color: #0c5ba6;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+ }
+ 
+/*Config. BOTON*/
+ .btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ .banner{
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .banner .banner-text {
+margin: 25px;
+text-align: center;
+padding: 0 90px;
+ }
+
+/*Config. H1*/
+.banner .banner-text h1 {
+    font-size: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: white;
+    /* Otras propriedades del estilo necesárias para el H1 */
+}
+
+/*Config. párrafo*/
+.banner .banner-text p {
+    font-size: 25px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 25px 0;
+    /* Otras propriedades del estilo necesárias para el  párrafo */
+}
+
+.description .explain {
+    background-image: url('img.grupo11/7.png');
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin:3px;
+    font-size: 18px;
+
+}
+.explain p{
+    text-align: center;
+}
+
+
+/*CAROUSEL*/
+.second-section{
+    background-image: url('img.grupo11/ab.jpg');
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem dentro do elemento */
+        background-attachment: fixed;
+}
+.imagenes {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 1400px; /* Define a largura máxima para todas as imagens */
+    max-height: 500px;
+}
+#carouselExampleCaptions{
+    display: flex;
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+}
+.options{
+    font-size: 30px;
+    color: #fff;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    
+}
+.second-section p{
+    text-align: center; 
+    margin: 20px auto 0;
+}
+/*FOOTER*/
+#footer {
+    background: linear-gradient(to right, #000000, #3f3f46); /* Degradado de negro a azul */
+    color: #fff;
+    padding: 10px;
+}
+
+ #navdown {
+    margin-bottom: 10px;
+}
+
+.contactos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactos li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contactos img {
+    width: 30px; /* Ajusta el tamaño según tus necesidades */
+    height: 30px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* Para hacer los íconos de redes sociales redondos */
+}
+
+.contactos a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactos a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+

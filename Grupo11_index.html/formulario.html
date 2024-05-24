@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Grupo 11</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="C:\Projetos python Robson\Grupo11_index.html\img.grupo11\Logo11.ico">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Nombre del Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                Guardar contraseña
+            </label>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
